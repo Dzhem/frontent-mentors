@@ -23,7 +23,8 @@ body {
   padding: 0;
 }
 
-.raiting-block {
+.raiting-block,
+.thanks-block {
   color: var(--light-grey);
   background-color: var(--dark-blue);
   background: radial-gradient(
@@ -38,18 +39,35 @@ body {
   position: relative;
 }
 
-.raiting-block::before {
+.thanks-block {
+  padding-top: 180px;
+}
+
+.raiting-block::before,
+.thanks-block::before {
   content: "";
   display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.raiting-block::before {
   background-color: var(--medium-grey);
   width: 50px;
   height: 50px;
-  position: absolute;
   top: 33px;
   border-radius: 50%;
   background-image: url(images/icon-star.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
+}
+
+.thanks-block::before {
+  background-image: url(images/illustration-thank-you.svg);
+  width: 162px;
+  height: 108px;
+  left: 50%;
+  top: 45px;
+  transform: translateX(-50%);
 }
 
 .raiting-title {
@@ -118,6 +136,31 @@ body {
 .raiting-btn:hover {
   background-color: var(--white);
   color: var(--orange);
+}
+
+.riating-info {
+  background-color: var(--medium-grey);
+  color: var(--orange);
+  margin: 0 auto;
+  width: 190px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.thanks-title {
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.thanks-text {
+  line-height: 1.4rem;
+  text-align: center;
 }
 
 .attribution {
