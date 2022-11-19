@@ -113,13 +113,14 @@ body {
   font-weight: 700;
   transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.raiting-item:hover,
+/* .raiting-item:hover,
 .raiting-items .active:hover {
   background-color: var(--orange);
   color: var(--white);
-}
+} */
 
 .raiting-items .active {
   background-color: var(--light-grey);
@@ -144,10 +145,10 @@ body {
   cursor: pointer;
 }
 
-.raiting-btn:hover {
+/* .raiting-btn:hover {
   background-color: var(--white);
   color: var(--orange);
-}
+} */
 
 .riating-info {
   background-color: var(--medium-grey);
@@ -198,5 +199,18 @@ body {
   .thanks-block::before {
     width: 162px;
     height: 108px;
+  }
+}
+
+@media (hover: hover) {
+  .raiting-item:hover,
+  .raiting-items .active:hover {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+
+  .raiting-btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
   }
 }
