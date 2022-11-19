@@ -23,6 +23,15 @@ body {
   padding: 0;
 }
 
+#raiting-wrap {
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 0 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .raiting-block,
 .thanks-block {
   color: var(--light-grey);
@@ -32,15 +41,15 @@ body {
     var(--medium-grey) 0%,
     var(--dark-blue) 60%
   );
-  margin: 195px auto;
-  width: 415px;
-  padding: 117px 33px 33px;
+  margin: 0 auto;
+  max-width: 415px;
+  padding: 90px 20px 20px;
   border-radius: 30px;
   position: relative;
 }
 
 .thanks-block {
-  padding-top: 180px;
+  padding: 150px 20px 20px;
 }
 
 .raiting-block::before,
@@ -56,17 +65,19 @@ body {
   background-color: var(--medium-grey);
   width: 50px;
   height: 50px;
-  top: 33px;
+  top: 25px;
   border-radius: 50%;
   background-image: url(images/icon-star.svg);
 }
 
 .thanks-block::before {
   background-image: url(images/illustration-thank-you.svg);
-  width: 162px;
-  height: 108px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 145px;
+  height: 96px;
   left: 50%;
-  top: 45px;
+  top: 33px;
   transform: translateX(-50%);
 }
 
@@ -119,7 +130,7 @@ body {
   background-color: var(--orange);
   color: var(--white);
   border: none;
-  width: 340px;
+  width: 100%;
   height: 45px;
   margin: 0 auto;
   display: flex;
@@ -169,4 +180,23 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 425px) {
+  .raiting-block {
+    padding: 117px 40px 40px;
+  }
+
+  .thanks-block {
+    padding: 185px 40px 40px;
+  }
+
+  .raiting-block::before {
+    top: 33px;
+  }
+
+  .thanks-block::before {
+    width: 162px;
+    height: 108px;
+  }
 }
