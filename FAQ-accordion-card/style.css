@@ -8,7 +8,7 @@
   --soft-blue: hsl(240, 73%, 65%);
   --very-dark-grayish-blue: hsl(237, 12%, 33%);
   --dark-grayish-blue: hsl(240, 6%, 50%);
-  --vight-grayish-blue: hsl(240, 5%, 91%);
+  --light-grayish-blue: hsl(240, 5%, 91%);
   --title: #211f37;
   font-size: 12px;
   font-family: "Kumbh Sans", sans-serif;
@@ -35,12 +35,13 @@ body {
 .faq-block {
   min-width: 100%;
   max-width: 920px;
-  background-color: var(--vight-grayish-blue);
+  background-color: var(--light-grayish-blue);
   border-radius: 20px;
   padding: 130px 24px 38px;
   -webkit-box-shadow: 0px 23px 35px -11px var(--soft-violet-shadow);
   -moz-box-shadow: 0px 23px 35px -11px var(--soft-violet-shadow);
   box-shadow: 0px 23px 35px -11px var(--soft-violet-shadow);
+  color: var(--very-dark-desaturated-blue);
 }
 
 .faq-title {
@@ -48,6 +49,23 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: var(--title);
+  margin-bottom: 20px;
+}
+
+.faq-list {
+  list-style: none;
+}
+
+.faq-item {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--dark-grayish-blue);
+}
+
+.question {
+}
+
+.answer {
+  display: none;
 }
 
 .attribution {
