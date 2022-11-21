@@ -81,14 +81,14 @@ body {
 }
 
 .faq-item {
-  padding: 20px 0;
   border-bottom: 1px solid var(--dark-grayish-blue);
 }
 
 .question {
+  padding: 20px 0;
   position: relative;
-  transition: transform 1s;
   color: var(--very-dark-grayish-blue);
+  cursor: pointer;
 }
 
 .question::before {
@@ -101,7 +101,7 @@ body {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 
 .question.active {
@@ -119,7 +119,7 @@ body {
 
 .answer {
   display: none;
-  margin-top: 20px;
+  margin-bottom: 20px;
 
   color: var(--dark-grayish-blue);
 }
