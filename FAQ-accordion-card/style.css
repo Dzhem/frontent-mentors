@@ -89,6 +89,7 @@ body {
   position: relative;
   color: var(--very-dark-grayish-blue);
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .question::before {
